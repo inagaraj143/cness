@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNESS</title>
+</head>
+<body>
+    <script  src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./theme.css">
+
+        <header>
+            <div class="logo">
+                <a href="./"><img src="./assets/images/cness-svg-logo.svg" alt=""></a>
+            </div>
+        </header>
+        <section class="home">
+            <div class="heading thumb-heading">Exclusive Preview of the CNESS Platform</div>
+            <div class="desc">
+                <p>You are invited to first watch the overview video and then click the button below to access our interactive demo of the CNESS platform</p>
+            </div>
+        </section>
+        <section class="youtube-embed scroll-wrapper" id="youtube-embed">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DA9TmWEisCQ?si=j2jz-xmTq5nCX1sA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <div class="button-wrapper">
+            <a href="./experiences-cness.html" class="button-cta">
+                <span>Experience CNESS</span>
+            <span>
+                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="46" height="46" rx="23" fill="#1A237E"/>
+                <path d="M20.5217 33.9384L31.4601 22.9999L20.5217 12.0615L17.8115 14.7717L26.0398 22.9999L17.8115 31.2282L20.5217 33.9384Z" fill="white"/>
+                </svg>
+                </span>
+            </a>
+        </div>
+        <section class="about-section">
+            <div class="left-image">
+                <img src="./assets/images/about-image-v2.jpg" alt="">
+            </div>
+            <div class="right-content">
+                <div class="heading thumb-heading">About CNESS</div>
+                <div class="desc">
+                    <p>CNESS is pioneering the fusion of advanced AI technology with the global consciousness movement. Our B2C and B2B Social Media, Media and e-commerce platform, powered by our proprietary 'Pathfinder AI', personalizes the user experience, fostering impactful connections and powerful action.  The CNESS vision and business model has created the new paradigm that goes beyond global giants Facebook, Netflix, Amazon, and ChatGPT4 to create the world's most valuable company.
+                    </p>
+                    
+                </div>
+            </div>
+           
+           </section>
+           <section class="about">
+            <div class="desc">
+                <p>Designed for innovation and profound global impact, CNESS is an extraordinary financial and purposeful investment opportunity that is building the platform for a better you and a better world.  Be part of the start of the global impact.</p>
+                <hr class="border-bottom"/>
+                <div class="contact">
+                    <div><b>Connect with us:</b></div>
+                    <div></div><b>Email: <a class="" href="mailto:nandhiji@cness.co" target="_blank" rel="noopener">nandhiji@cness.co</a></b></div>
+                    <div><b>Phone: +1 (310) 945-6344</b></div>
+                </div>
+                <div class="button-wrapper">
+                    <a href="mailto:nandhiji@cness.co" class="button-cta">
+                        <span>Contact</span>
+                    <span>
+                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="46" height="46" rx="23" fill="#1A237E"/>
+                        <path d="M20.5217 33.9384L31.4601 22.9999L20.5217 12.0615L17.8115 14.7717L26.0398 22.9999L17.8115 31.2282L20.5217 33.9384Z" fill="white"/>
+                        </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+           </section>
+       <footer> 
+        © 2024 CNESS. All rights reserved.
+       </footer>
+
+</body>
+<script>
+
+
+
+var $sections = $(".scroll-wrapper");
+$(window).scroll(function () {
+    $sections.each(function () {
+        var $section = $(this);
+        var sectionTop = $section.offset().top - 100;
+        var sectionBottom = sectionTop + $section.outerHeight();
+        var scrollPosition = $(window).scrollTop();
+        var id = $section.attr("id");
+        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+            $section.addClass("active");
+        } else {
+            $section.removeClass("active");
+        }
+    });
+});
+    </script>
+
+</html>

@@ -1,0 +1,68 @@
+
+<section class="prototype">
+    <div class="thumbnail-wrapper">
+        <div class="thumb-nail-section-wrapper">
+            <div class="slider-nav">
+                <div class="slide-btn"><img src="https://framerusercontent.com/images/JJHnc9AcoEJQBWBepsIVV3kCMys.jpg" alt=""></div>
+                <div class="slide-btn"><img src="https://framerusercontent.com/images/EakmsMoOtEBawX3IM6zpDggTgc4.jpg" alt=""></div>
+                <div class="slide-btn"><img src="https://framerusercontent.com/images/3jFsyZmR8Byz3sUqUxsE83TCRQ.jpg" alt=""></div>
+                <div class="slide-btn"><img src="https://framerusercontent.com/images/fGrFWc4EEX4K1i2jEwFpYnq97o.jpg" alt=""></div>
+                <div class="slide-btn"><img src="https://framerusercontent.com/images/n2PsTPRkSwwfVMcNJWjyjwQXUQ.jpg" alt=""></div>
+                <div class="slide-btn"><img src="https://framerusercontent.com/images/lUJMjNs7amyXsFjaUFHzAYJGu8.jpg" alt=""></div>
+                <div class="slide-btn"><img src="https://framerusercontent.com/images/jKMuG6mjwstSyGQdDG7pc4XrrgI.jpg" alt=""></div>
+                <div class="slide-btn"><img src="https://framerusercontent.com/images/yH6AWFGbt1qaNlici4webqFLbI.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="section-protype-preview-wrapper" >
+        <div class="section-title">Prototype</div>
+        <div class="section-desc">Trending Conscious Entertainment</div>
+        <div class="sld-wrp" id="protype_preview_section">
+            <div class="slider-for">
+                <div class="slide-container"><img src="https://framerusercontent.com/images/CSQsJspuVVYi3HNFQguzJIFu3J8.jpg" alt=""></div>
+                <div class="slide-container"><img src="https://framerusercontent.com/images/rwcyDp9ucKaf39vgU6DaZRgPRU.jpg" alt=""></div>
+                <div class="slide-container"><img src="https://framerusercontent.com/images/eLEbWSxJW7Mggwp1JxCSgPrAatQ.jpg" alt=""></div>
+                <div class="slide-container"><img src="https://framerusercontent.com/images/VDWCkZeflrKCWwcUfV02Ye5Bb4.jpg" alt=""></div>
+                <div class="slide-container"><img src="https://framerusercontent.com/images/lknSA227HKWpznRm3zkW5XfhJis.jpg" alt=""></div>
+                <div class="slide-container"><img src="https://framerusercontent.com/images/Cm3mz4MAa87TW6pNmBAd6Jj2ZKw.jpg" alt=""></div>
+                <div class="slide-container"><img src="https://framerusercontent.com/images/PvjEnEjY58YE52mH7YBPWwtrc.jpg" alt=""></div>
+                <div class="slide-container"><img src="https://framerusercontent.com/images/UvbH09pZB6lDJfj32hQ6fZTwlCU.jpg" alt=""></div>
+            </div>
+           
+        </div>
+    </div>
+</section>
+<script>
+
+
+
+    $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+    //   fade: true,
+        prevArrow: ".prev-arrow-down",
+        nextArrow: ".next-arrow-down",
+      speed:2000,
+      asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+      slidesToShow: 4,
+      infinite: true,
+      slidesToScroll: 1,
+      arrows: true,
+      asNavFor: '.slider-for',
+      dots: false,
+    //   centerMode: true,
+    //   vertical: true,
+        prevArrow: ".prev-arrow-down",
+        nextArrow: ".next-arrow-down",
+      focusOnSelect: true
+    });
+    
+    $('.slider-nav').on('afterChange', function(event, slick, currentSlide, nextSlide){
+        $('html, body').animate({
+                scrollTop: $('#protype_preview_section').offset().top
+        }, 1000); 
+    });
+        </script>
