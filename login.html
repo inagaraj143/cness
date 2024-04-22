@@ -6,13 +6,13 @@
 </head>
 <body>
     <script  src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <div class="logo-container">
-        <a href="./"><img src="./assets/images/cness-white-svg.svg" alt=""></a>
-    </div>
+    
    
     <section class="home login-section">
         <div class="coming-soon-logo">
-           
+            <div class="logo-container">
+                <a href="./"><img src="./assets/images/cness-white-svg.svg" alt=""></a>
+            </div>
             <form action="">
                 <div><input type="password" placeholder="password" class="form-input" name="password" id="password"></div>
                 <div><button type="button" class="button-cta" id="submit-btn">Login</button></div>
@@ -34,9 +34,8 @@
     }
     
     .logo-container {
-        display: flex;
-        justify-content: center;
-        padding-top: 30px;
+      
+        padding-bottom: 30px;
     }
     .logo-container a {
         width: 20%;
@@ -49,7 +48,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 70vh;
+        height: 100vh;
         text-align: center;
         position: relative;
     }
