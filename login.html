@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNESS - Login</title>
+</head>
+<body>
+    <script  src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <div class="logo-container">
+        <a href="./"><img src="./assets/images/cness-white-svg.svg" alt=""></a>
+    </div>
+   
+    <section class="home login-section">
+        <div class="coming-soon-logo">
+           
+            <form action="">
+                <div><input type="password" placeholder="password" class="form-input" name="password" id="password"></div>
+                <div><button type="button" class="button-cta" id="submit-btn">Login</button></div>
+            </form>
+        </div>
+    </section>
+</body>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+    body {
+        background-color: #1A237E;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
+       
+    
+    }
+    
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    .logo-container a {
+        width: 20%;
+        margin: 0 auto;
+    }
+    .logo-container a img{
+        width: 100%;
+    }
+    section.login-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        text-align: center;
+        position: relative;
+    }
+    section.login-section img{
+        width: 50%;
+    }
+    .coming-soon-text {
+        color: #fff;
+        font-size: 49px;
+        line-height: 60px;
+        font-weight: 600;
+        padding-top: 30px;
+    }
+    .button-cta {
+        background: #FFCC00;
+        border-radius: 32px;
+        min-height: 49px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: center;
+        text-decoration: none;
+        width: 145px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 auto;
+        color: #1A237E;
+        cursor: pointer;
+    }
+    .login-wrapper {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+    }
+    input#password {
+        width: 300px;
+        height: 40px;
+        font-size: 20px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+</style>
+<script>    
+$("#submit-btn").click(function(){
+    var password = $("#password").val();
+    if(password!=""){
+        if(password == "cness@0424"){
+            // window.location.href="https://framer.com/projects/CNESS--VzJBC2pkFfa3UBO9HM5S-6sKYH";
+            window.location.href="./home.html";
+        }
+        else {
+            alert("wrong password");
+        }
+    }
+    else {
+        alert("Password is required");
+    }
+    
+});
+
+</script>
+</html>
